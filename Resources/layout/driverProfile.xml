@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:src="@mipmap/mngnob"
+        android:layout_gravity="top|center"
+    />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:elevation="5dp"
+            >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:gravity="end"
+            android:visibility="gone"
+            android:elevation="5dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:id="@+id/imgonephone"
+                android:layout_margin="3dp"
+                android:src="@drawable/phone_call"/>
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_margin="3dp"
+                android:id="@+id/imgtwoEmail"
+                android:src="@drawable/mail"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:background="@drawable/cardview"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="User"
+                android:textSize="25sp"
+                android:textFontWeight="500"
+                android:textStyle="bold"
+                android:id="@+id/UseName"
+                android:textColor="@android:color/black"
+                android:fontFamily="sans-serif-condensed"
+                android:layout_margin="5dp"
+                    />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="user@mngs.co.za"
+                android:textSize="20dp"
+                android:id="@+id/UserMail"
+                android:textColor="@android:color/black"
+                android:fontFamily="sans-serif-condensed"
+                android:drawableTint="@android:color/black"
+                
+                style="@style/Smaller_Drawable"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Technician/Client"
+                android:textSize="20dp"
+                android:id="@+id/AccountType"
+                android:textColor="@android:color/black"
+                android:fontFamily="sans-serif-condensed"
+                android:drawableTint="@android:color/black"
+                android:drawableLeft="@drawable/ic_account_circle_black_18dp"
+                style="@style/Smaller_Drawable"/>
+
+            
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="20dp"
+                android:visibility="gone"
+                android:id="@+id/TxtplateNum"
+                android:layout_marginBottom="5dp"
+                android:textColor="@android:color/black"
+                android:fontFamily="sans-serif-condensed"
+                android:drawableTint="@android:color/black"
+                android:drawableLeft="@drawable/ic_directions_bus_black_18dp"
+                style="@style/Smaller_Drawable"/>
+
+            
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                style="@style/ThemeOverlay.MaterialComponents.TextInputEditText.OutlinedBox">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/preferdName"
+                    android:inputType="text"
+                    android:hint="prefered name"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                style="@style/ThemeOverlay.MaterialComponents.TextInputEditText.OutlinedBox">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/phone"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:hint="Phone"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:id="@+id/updateprofile"
+                android:text="update"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</FrameLayout>
